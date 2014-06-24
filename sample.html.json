@@ -3,7 +3,7 @@
 	{"head":[
 		{"title":"test page"},
 		{"script": bootstrap_script}
-	]},{
+	]},
 	{"body":[
 		{"h1":{
 			"content":"This is an H1 header",
