@@ -1,4 +1,3 @@
-[{"doctype": ["html"], "no-close" },
 {"html":[
 	{"head":[
 		{"title":"test page"},
@@ -16,14 +15,21 @@
 				"content":"content with id",
 				"id":"selected"
 			}},
+			{"li":[
+				{"a":{
+					"href":"/",
+					"content":"content with a link"
+				}}
+			]},
 			{"li":{
 				"content":[
 					{"a":{
-						"href":"/",
-						"content":"content with a link"
+						"href":"/"
+						"content with a link and an id"
 					}}
-				]
+				],
+				"id":"list_w_id"
 			}}
 		]}
 	]}
-]}]
+]}
