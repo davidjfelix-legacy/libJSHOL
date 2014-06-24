@@ -1,11 +1,10 @@
 [{"doctype": ["html"], "no-close" },
 {"html":[
-	"head":[
+	{"head":[
 		{"title":"test page"},
 		{"script": bootstrap_script}
-	]
-},{
-	"body":[
+	]},{
+	{"body":[
 		{"h1":{
 			"content":"This is an H1 header",
 			"id":"main_header",
@@ -26,5 +25,5 @@
 				]
 			]}
 		]}
-	]
-}]]
+	]}
+]]
