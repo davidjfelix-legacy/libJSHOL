@@ -1,5 +1,5 @@
 [{"doctype": ["html"], "no-close" },
-{"html": {
+{"html":[
 	"head":[
 		{"title":"test page"},
 		{"script": bootstrap_script}
@@ -27,4 +27,4 @@
 			]}
 		]}
 	]
-}}]
+}]]
