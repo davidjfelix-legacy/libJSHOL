@@ -16,14 +16,14 @@
 				"content":"content with id",
 				"id":"selected"
 			}},
-			{"li":[
-				"content":{[
+			{"li":{
+				"content":[
 					{"a":{
 						"href":"/",
 						"content":"content with a link"
 					}}
-				]}
-			]}
+				]
+			}}
 		]}
 	]}
 ]}]
