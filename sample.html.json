@@ -17,12 +17,12 @@
 				"id":"selected"
 			}},
 			{"li":[
-				"content":[
+				"content":{[
 					{"a":{
 						"href":"/",
 						"content":"content with a link"
 					}}
-				]
+				]}
 			]}
 		]}
 	]}
