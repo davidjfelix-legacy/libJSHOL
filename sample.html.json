@@ -1,32 +1,30 @@
-{
-{"doctype": ["html"], "no-close" },
+[{"doctype": ["html"], "no-close" },
 {"html": {
-	"head":{
+	"head":[
 		{"title":"test page"},
 		{"script": bootstrap_script}
-	}
+	]
 },{
-	"body":{
+	"body":[
 		{"h1":{
 			"content":"This is an H1 header",
 			"id":"main_header",
 			"class":"blue"
 		}},
-		{"ul":{
+		{"ul":[
 			{"li":"content only"},
 			{"li":{
 				"content":"content with id",
 				"id":"selected"
 			}},
-			{"li":{
-				"content":{
+			{"li":[
+				"content":[
 					{"a":{
 						"href":"/",
 						"content":"content with a link"
 					}}
-				}
-			}}
-		}}
-	}
-}}
-}
+				]
+			]}
+		]}
+	]
+}}]
