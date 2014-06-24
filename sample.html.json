@@ -1,1 +1,41 @@
 {
+	{
+		"doctype": ["html"],
+		"no-close"
+	},{
+		"html": {
+			"head": {
+				{
+					"title":"test page"
+				},{
+				"script": bootstrap_script
+				}
+			}
+		},{
+			"body":{{
+				"h1":{
+					"content":"This is an H1 header"
+					"id":"main_header"
+					"class":"blue"
+				}},{
+					"ul":{
+						{
+							"li":"content only"
+						},{
+							"li":{
+								"content":"content with id"
+								"id":"selected"
+							}
+						},{
+							"li":{
+								"content":{
+									"a":{
+										"href":"/",
+										"content":"content with a link"
+									}
+								}
+						}	
+				}}
+		}}
+	}
+}
