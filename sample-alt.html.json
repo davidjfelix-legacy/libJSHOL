@@ -1,0 +1,23 @@
+{"html":[
+	{"head":[
+		{"title":"test page"},
+		{"script": bootstrap_script}
+	]},
+	{"body":[
+		{"h1":{"id":"main_header", "class":"blue", "content":"This is an H1 header"}},
+		{"ul":[
+			{"li":"content only"},
+			{"li":{"id":"selected", "content":"content with id"}},
+			{"li":[
+				{"a":{
+					"href":"/",
+					"content":"content with a link"
+				}}
+			]},
+			{"li":{"id":"list_w_id", "content":[
+					{"a":{"href":"/", "content":"content with a link and an id"}}
+				]
+			}}
+		]}
+	]}
+]}
