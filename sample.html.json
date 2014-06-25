@@ -5,15 +5,15 @@
 	]},
 	{"body":[
 		{"h1":{
-			"content":"This is an H1 header",
 			"id":"main_header",
-			"class":"blue"
+			"class":"blue",
+			"content":"This is an H1 header"
 		}},
 		{"ul":[
 			{"li":"content only"},
 			{"li":{
-				"content":"content with id",
-				"id":"selected"
+				"id":"selected",
+				"content":"content with id"
 			}},
 			{"li":[
 				{"a":{
@@ -22,13 +22,13 @@
 				}}
 			]},
 			{"li":{
+				"id":"list_w_id",
 				"content":[
 					{"a":{
-						"href":"/"
-						"content with a link and an id"
+						"href":"/",
+						"content":"content with a link and an id"
 					}}
-				],
-				"id":"list_w_id"
+				]
 			}}
 		]}
 	]}
