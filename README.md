@@ -4,6 +4,13 @@ libJSHOL
 JSHOL stands for Javascript HTML Object Language. JSHOL is a subset of JSON that acts as a
 domain specific language for creating HTML5 documents using JSON obbjects.
 
+This project was inspired by SCSS/SASS and HAML. While I think HAML is a good step to prevent
+me from ever having to use HTML again, I don't think that it goes far enough to take advantage
+of existing tech and replacement methods. I also don't think HAML is accessible enough, since
+their DSL is parsed by Ruby and pretty little else. By having JSHOL be a subset of JSON and
+writing the validation/HTML generation library in C, I can help ensure that JSHOL is accesible
+to other languages and can be generated and sent over existing JSON services.
+
 ##Why? Why would you do that?
 
 I **hate** SGML, XML and HTML. Tag-based markup is a terrible plague on the world and should
