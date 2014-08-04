@@ -28,7 +28,7 @@ This file will closely map (visually) to [sample.html](./sample.html).
 Like the above JSON files, this file will result in the same output HTML.
 
 
-##[sample.html](./sample.hmtl)
+##[sample.html](./sample.html)
 
 This is the most literal output that JSHOL can create from JSON objects.
 Computers will read it fine and the lack out unneccesary whitespace may result in a smaller file size.
