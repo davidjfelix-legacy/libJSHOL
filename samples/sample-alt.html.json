@@ -9,7 +9,7 @@
 			{"li":"content only"},
 			{"li":{"id":"selected", "content":"content with id"}},
 			{"li":[
-				{"a":{"href":"/","content":"content with a link"}}
+				{"a":{"href":"/", "content":"content with a link"}}
 			]},
 			{"li":{"id":"list_w_id", "content":[
 					{"a":{"href":"/", "content":"content with a link and an id"}}
