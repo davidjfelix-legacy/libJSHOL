@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import json
+from html.parser import HTMLParser
 
 
 class InvalidJSHOLError(Exception):
@@ -7,6 +8,14 @@ class InvalidJSHOLError(Exception):
 		self.value = value
 	def __str__(self):
 		return repr(self.value)
+
+
+class JSHOLDecoder(JSONDecoder):
+	pass
+
+
+class JSHOLEncoder(JSONEncoder, HTMLParser):
+	pass
 
 
 def main():
