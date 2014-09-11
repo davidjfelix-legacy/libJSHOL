@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 import json
+from json import (
+	JSONEncoder,
+	JSONDecoder,
+)
 from html.parser import HTMLParser
 
 
@@ -11,11 +15,30 @@ class InvalidJSHOLError(Exception):
 
 
 class JSHOLDecoder(JSONDecoder):
-	pass
+	def default(self, obj):
+		pass
 
 
 class JSHOLEncoder(JSONEncoder, HTMLParser):
-	pass
+	def default(self, string):
+		self.feed(string)
+		
+	def handle_decl(self, decl):
+		pass
+	
+	def handle_data(self, data):
+		pass
+	
+	def handle_comment(self, data):
+		pass
+	
+	def handle_starttag(self, tag, attrs):
+		pass
+	
+	def handle_starttagend(self, tag, attrs):
+		pass
+	
+	def handle_endtag(self, tag):
 
 
 def main():
