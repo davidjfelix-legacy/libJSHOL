@@ -39,6 +39,7 @@ class JSHOLEncoder(JSONEncoder, HTMLParser):
 		pass
 	
 	def handle_endtag(self, tag):
+		pass
 
 
 def main():
