@@ -15,8 +15,9 @@ class InvalidJSHOLError(Exception):
 
 
 class JSHOLDecoder(JSONDecoder):
-	def decode(self, string):
-		pass
+	def decode_html(self, string):
+		obj = self.encode(string)
+		return dumpsHTML(obj)
 
 
 class JSHOLEncoder(JSONEncoder):
@@ -112,12 +113,6 @@ def dumpsHTML(obj):
 	html_string = "<!DOCTYPE html>\n{0}"
 	HTML = parseTag(obj)
 	return html_string.format(HTML)
-	
-
-def json2HTML(json_string):
-	"""API function to load JSON and convert it to HTML"""
-	obj = json.loads(json_string)
-	return dumpsHTML(obj)
 
 
 if __name__ == "__main__":
