@@ -15,31 +15,47 @@ class InvalidJSHOLError(Exception):
 
 
 class JSHOLDecoder(JSONDecoder):
-	def default(self, obj):
+	def decode(self, string):
 		pass
 
 
-class JSHOLEncoder(JSONEncoder, HTMLParser):
-	def default(self, string):
-		self.feed(string)
+class JSHOLEncoder(JSONEncoder):
+	
+	class JSHOLHTMLParser(HTMLParser):
+	
+		def __init__(self, *args, **kwargs):
+			super().__init__(*args, **kwargs)
+			self.json_string = ""
+	
+		def handle_decl(self, decl):
+			pass
+	
+		def handle_data(self, data):
+			pass
+
+		def handle_comment(self, data):
+			pass
+	
+		def handle_starttag(self, tag, attrs):
+			pass
+	
+		def handle_starttagend(self, tag, attrs):
+			pass
+	
+		def handle_endtag(self, tag):
+			pass
 		
-	def handle_decl(self, decl):
-		pass
+		def get_json_string(self):
+			pass
+
 	
-	def handle_data(self, data):
-		pass
-	
-	def handle_comment(self, data):
-		pass
-	
-	def handle_starttag(self, tag, attrs):
-		pass
-	
-	def handle_starttagend(self, tag, attrs):
-		pass
-	
-	def handle_endtag(self, tag):
-		pass
+	def encode(self, obj):
+		if isinstance(obj, str):
+			parser = JSHOLHTMLParser()
+			parser.feed(obj)
+			return parser.get_json_string()
+		else:
+			raise TypeError("JSHOLEncoder needs an HTML string to encode")
 
 
 def main():
